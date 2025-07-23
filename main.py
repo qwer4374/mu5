@@ -229,6 +229,7 @@ if __name__ == "__main__":
     if "PORT" in os.environ:
         from flask import Flask, request
         import telegram
+        print("Starting Flask app...")  # طباعة للتشخيص
         TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
         PORT = int(os.environ.get("PORT", 8080))
         bot = telegram.Bot(token=TOKEN)
@@ -236,10 +237,12 @@ if __name__ == "__main__":
 
         @app.route("/healthz")
         def healthz():
+            print("Health check called")  # طباعة للتشخيص
             return "ok"
 
         @app.route(f"/{TOKEN}", methods=["POST"])
         def webhook():
+            print("Webhook received!")  # طباعة للتشخيص
             update = telegram.Update.de_json(request.get_json(force=True), bot)
             # ضع هنا منطق التعامل مع الرسائل أو مررها إلى dispatcher إذا كنت تستخدم python-telegram-bot
             return "ok"

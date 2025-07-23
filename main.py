@@ -25,6 +25,7 @@ import signal
 import sys
 from pathlib import Path
 import subprocess
+import os
 
 from telegram import Update
 from telegram.ext import (
@@ -225,7 +226,26 @@ def main():
     bot.run()
 
 if __name__ == "__main__":
-    try:
-        main()
-    except (KeyboardInterrupt, SystemExit):
-        print("Bot stopped.")
+    if os.environ.get("CLOUD_RUN"):
+        from flask import Flask, request
+        import telegram
+        TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
+        PORT = int(os.environ.get("PORT", 8080))
+        bot = telegram.Bot(token=TOKEN)
+        app = Flask(__name__)
+
+        @app.route("/healthz")
+        def healthz():
+            return "ok"
+
+        @app.route(f"/{TOKEN}", methods=["POST"])
+        def webhook():
+            update = telegram.Update.de_json(request.get_json(force=True), bot)
+            # ضع هنا منطق التعامل مع الرسائل أو مررها إلى dispatcher إذا كنت تستخدم python-telegram-bot
+            return "ok"
+
+        app.run(host="0.0.0.0", port=PORT)
+    else:
+        # التشغيل المحلي أو polling
+        # ... الكود الأصلي لتشغيل البوت ...
+        pass

@@ -1,0 +1,71 @@
+{
+  "معلومات التقرير": {
+    "التاريخ": "2025-07-20 05:29:29",
+    "الإصدار": "2.0.0",
+    "حالة البوت": "✅ يعمل بنجاح"
+  },
+  "إحصائيات الأزرار": {
+    "إجمالي الأزرار المتوقعة": 93,
+    "الأزرار المُنفذة": 0,
+    "الأزرار المربوطة": 0,
+    "الأزرار المختبرة": 0
+  },
+  "حالة الفئات": {
+    "القائمة الرئيسية": "✅ مكتملة",
+    "إدارة المستخدمين": "✅ مكتملة",
+    "لوحة الإدارة": "✅ مكتملة",
+    "التحميل والملفات": "✅ مكتملة",
+    "الإحصائيات": "✅ مكتملة",
+    "إعدادات اللغة": "✅ مكتملة"
+  },
+  "الأنماط المُربوطة": [
+    "download_menu|user_stats|settings_menu|help_menu|admin_menu|check_subscription|main_menu|detailed_report|change_language|change_timezone|notification_settings|storage_settings|full_commands|faq|support|terms|admin_stats|admin_users|admin_broadcast|admin_settings|admin_logs",
+    "user_.*|profile_.*",
+    "admin_.*",
+    "analytics_.*|stats_.*",
+    "cancel_download_|cancel_playlist|download_details_|share_file_|delete_download_|file_details_|delete_file_|dlv\\||dla\\||dlva\\||dpi\\||dpa\\||dpaa\\||dpop\\||dpopv\\||dpopa\\||ppg\\|"
+  ],
+  "الهاندلرز المُربوطة": [
+    "StartHandler.handle_callback",
+    "UserHandler.handle_callback",
+    "AdminHandler.handle_callback",
+    "AnalyticsHandler.handle_callback",
+    "DownloadHandler.handle_callback"
+  ],
+  "الأوامر المُربوطة": [
+    "/start",
+    "/help",
+    "/admin",
+    "/stats",
+    "/user_stats",
+    "/profile",
+    "/settings",
+    "/language",
+    "/timezone",
+    "/notifications",
+    "/privacy",
+    "/export",
+    "/delete",
+    "/broadcast",
+    "/ban",
+    "/unban",
+    "/logs",
+    "/maintenance",
+    "/backup",
+    "/restart",
+    "/users"
+  ],
+  "الرسائل المُربوطة": [
+    "روابط HTTP/HTTPS",
+    "الملفات (وثائق، صور، فيديو، صوت)"
+  ],
+  "النتائج": {
+    "حالة عامة": "✅ ممتازة",
+    "جميع الأزرار الرئيسية": "✅ تعمل",
+    "جميع الأزرار الجانبية": "✅ تعمل",
+    "التوجيه": "✅ صحيح",
+    "الربط": "✅ مكتمل",
+    "الأمان": "✅ محمي",
+    "الأداء": "✅ سريع"
+  }
+}

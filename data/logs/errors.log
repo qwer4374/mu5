@@ -1,0 +1,355 @@
+2025-07-16 13:42:18 | [31mERROR[0m | AdvancedTelegramBot | initialize:117 | ❌ Failed to initialize bot: name 'Path' is not defined
+Exception: None
+--------------------------------------------------------------------------------
+2025-07-16 13:42:18 | [31mERROR[0m | AdvancedTelegramBot | start:246 | ❌ Error starting bot: name 'Path' is not defined
+Exception: None
+--------------------------------------------------------------------------------
+2025-07-16 21:15:19 | [31mERROR[0m | AdvancedTelegramBot | initialize:112 | ❌ Failed to initialize bot: StartHandler.__init__() missing 1 required positional argument: 'config'
+Exception: (<class 'TypeError'>, TypeError("StartHandler.__init__() missing 1 required positional argument: 'config'"), <traceback object at 0x00000216D2229D40>)
+--------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\MU3\Desktop\advanced_telegram1_bot\main.py", line 98, in initialize
+    self._initialize_handlers()
+  File "C:\Users\MU3\Desktop\advanced_telegram1_bot\main.py", line 125, in _initialize_handlers
+    self.handlers['start'] = StartHandler(self.db_manager)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: StartHandler.__init__() missing 1 required positional argument: 'config'
+2025-07-16 21:15:19 | [35mCRITICAL[0m | AdvancedTelegramBot | main:180 | ❌ Bot failed critically: StartHandler.__init__() missing 1 required positional argument: 'config'
+Exception: (<class 'TypeError'>, TypeError("StartHandler.__init__() missing 1 required positional argument: 'config'"), <traceback object at 0x00000216D21D9AC0>)
+--------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\MU3\Desktop\advanced_telegram1_bot\main.py", line 175, in main
+    await bot.initialize()
+  File "C:\Users\MU3\Desktop\advanced_telegram1_bot\main.py", line 98, in initialize
+    self._initialize_handlers()
+  File "C:\Users\MU3\Desktop\advanced_telegram1_bot\main.py", line 125, in _initialize_handlers
+    self.handlers['start'] = StartHandler(self.db_manager)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: StartHandler.__init__() missing 1 required positional argument: 'config'
+2025-07-16 21:15:51 | [31mERROR[0m | AdvancedTelegramBot | initialize:112 | ❌ Failed to initialize bot: DownloadHandler.__init__() missing 1 required positional argument: 'config'
+Exception: (<class 'TypeError'>, TypeError("DownloadHandler.__init__() missing 1 required positional argument: 'config'"), <traceback object at 0x000002A66D469E80>)
+--------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\MU3\Desktop\advanced_telegram1_bot\main.py", line 98, in initialize
+    self._initialize_handlers()
+  File "C:\Users\MU3\Desktop\advanced_telegram1_bot\main.py", line 127, in _initialize_handlers
+    self.handlers['download'] = DownloadHandler(self.db_manager)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: DownloadHandler.__init__() missing 1 required positional argument: 'config'
+2025-07-16 21:15:51 | [35mCRITICAL[0m | AdvancedTelegramBot | main:180 | ❌ Bot failed critically: DownloadHandler.__init__() missing 1 required positional argument: 'config'
+Exception: (<class 'TypeError'>, TypeError("DownloadHandler.__init__() missing 1 required positional argument: 'config'"), <traceback object at 0x000002A66D048980>)
+--------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\MU3\Desktop\advanced_telegram1_bot\main.py", line 175, in main
+    await bot.initialize()
+  File "C:\Users\MU3\Desktop\advanced_telegram1_bot\main.py", line 98, in initialize
+    self._initialize_handlers()
+  File "C:\Users\MU3\Desktop\advanced_telegram1_bot\main.py", line 127, in _initialize_handlers
+    self.handlers['download'] = DownloadHandler(self.db_manager)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: DownloadHandler.__init__() missing 1 required positional argument: 'config'
+2025-07-16 21:16:10 | [31mERROR[0m | AdvancedTelegramBot | initialize:112 | ❌ Failed to initialize bot: UserHandler.__init__() missing 1 required positional argument: 'config'
+Exception: (<class 'TypeError'>, TypeError("UserHandler.__init__() missing 1 required positional argument: 'config'"), <traceback object at 0x0000013759DB9E40>)
+--------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\MU3\Desktop\advanced_telegram1_bot\main.py", line 98, in initialize
+    self._initialize_handlers()
+  File "C:\Users\MU3\Desktop\advanced_telegram1_bot\main.py", line 128, in _initialize_handlers
+    self.handlers['user'] = UserHandler(self.db_manager)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: UserHandler.__init__() missing 1 required positional argument: 'config'
+2025-07-16 21:16:10 | [35mCRITICAL[0m | AdvancedTelegramBot | main:180 | ❌ Bot failed critically: UserHandler.__init__() missing 1 required positional argument: 'config'
+Exception: (<class 'TypeError'>, TypeError("UserHandler.__init__() missing 1 required positional argument: 'config'"), <traceback object at 0x0000013757977780>)
+--------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\MU3\Desktop\advanced_telegram1_bot\main.py", line 175, in main
+    await bot.initialize()
+  File "C:\Users\MU3\Desktop\advanced_telegram1_bot\main.py", line 98, in initialize
+    self._initialize_handlers()
+  File "C:\Users\MU3\Desktop\advanced_telegram1_bot\main.py", line 128, in _initialize_handlers
+    self.handlers['user'] = UserHandler(self.db_manager)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: UserHandler.__init__() missing 1 required positional argument: 'config'
+2025-07-16 21:16:30 | [31mERROR[0m | AdvancedTelegramBot | initialize:112 | ❌ Failed to initialize bot: AnalyticsHandler.__init__() missing 1 required positional argument: 'config'
+Exception: (<class 'TypeError'>, TypeError("AnalyticsHandler.__init__() missing 1 required positional argument: 'config'"), <traceback object at 0x00000266362A9F80>)
+--------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\MU3\Desktop\advanced_telegram1_bot\main.py", line 98, in initialize
+    self._initialize_handlers()
+  File "C:\Users\MU3\Desktop\advanced_telegram1_bot\main.py", line 129, in _initialize_handlers
+    self.handlers['analytics'] = AnalyticsHandler(self.services['analytics'])
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: AnalyticsHandler.__init__() missing 1 required positional argument: 'config'
+2025-07-16 21:16:30 | [35mCRITICAL[0m | AdvancedTelegramBot | main:180 | ❌ Bot failed critically: AnalyticsHandler.__init__() missing 1 required positional argument: 'config'
+Exception: (<class 'TypeError'>, TypeError("AnalyticsHandler.__init__() missing 1 required positional argument: 'config'"), <traceback object at 0x00000266362AA140>)
+--------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\MU3\Desktop\advanced_telegram1_bot\main.py", line 175, in main
+    await bot.initialize()
+  File "C:\Users\MU3\Desktop\advanced_telegram1_bot\main.py", line 98, in initialize
+    self._initialize_handlers()
+  File "C:\Users\MU3\Desktop\advanced_telegram1_bot\main.py", line 129, in _initialize_handlers
+    self.handlers['analytics'] = AnalyticsHandler(self.services['analytics'])
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: AnalyticsHandler.__init__() missing 1 required positional argument: 'config'
+2025-07-16 21:16:58 | [31mERROR[0m | AdvancedTelegramBot | initialize:112 | ❌ Failed to initialize bot: 'StartHandler' object has no attribute 'start'
+Exception: (<class 'AttributeError'>, AttributeError("'StartHandler' object has no attribute 'start'"), <traceback object at 0x0000017274B9A340>)
+--------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\MU3\Desktop\advanced_telegram1_bot\main.py", line 104, in initialize
+    self._register_handlers()
+  File "C:\Users\MU3\Desktop\advanced_telegram1_bot\main.py", line 140, in _register_handlers
+    self.application.add_handler(CommandHandler("start", self.handlers['start'].start))
+                                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'StartHandler' object has no attribute 'start'
+2025-07-16 21:16:58 | [35mCRITICAL[0m | AdvancedTelegramBot | main:180 | ❌ Bot failed critically: 'StartHandler' object has no attribute 'start'
+Exception: (<class 'AttributeError'>, AttributeError("'StartHandler' object has no attribute 'start'"), <traceback object at 0x0000017274B69E00>)
+--------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\MU3\Desktop\advanced_telegram1_bot\main.py", line 175, in main
+    await bot.initialize()
+  File "C:\Users\MU3\Desktop\advanced_telegram1_bot\main.py", line 104, in initialize
+    self._register_handlers()
+  File "C:\Users\MU3\Desktop\advanced_telegram1_bot\main.py", line 140, in _register_handlers
+    self.application.add_handler(CommandHandler("start", self.handlers['start'].start))
+                                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'StartHandler' object has no attribute 'start'
+2025-07-16 21:17:29 | [31mERROR[0m | AdvancedTelegramBot | initialize:112 | ❌ Failed to initialize bot: 'StartHandler' object has no attribute 'help_command'
+Exception: (<class 'AttributeError'>, AttributeError("'StartHandler' object has no attribute 'help_command'"), <traceback object at 0x000001E5CB69A3C0>)
+--------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\MU3\Desktop\advanced_telegram1_bot\main.py", line 104, in initialize
+    self._register_handlers()
+  File "C:\Users\MU3\Desktop\advanced_telegram1_bot\main.py", line 141, in _register_handlers
+    self.application.add_handler(CommandHandler("help", self.handlers['start'].help_command))
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'StartHandler' object has no attribute 'help_command'
+2025-07-16 21:17:29 | [35mCRITICAL[0m | AdvancedTelegramBot | main:181 | ❌ Bot failed critically: 'StartHandler' object has no attribute 'help_command'
+Exception: (<class 'AttributeError'>, AttributeError("'StartHandler' object has no attribute 'help_command'"), <traceback object at 0x000001E5CB68FD40>)
+--------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\MU3\Desktop\advanced_telegram1_bot\main.py", line 176, in main
+    await bot.initialize()
+  File "C:\Users\MU3\Desktop\advanced_telegram1_bot\main.py", line 104, in initialize
+    self._register_handlers()
+  File "C:\Users\MU3\Desktop\advanced_telegram1_bot\main.py", line 141, in _register_handlers
+    self.application.add_handler(CommandHandler("help", self.handlers['start'].help_command))
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'StartHandler' object has no attribute 'help_command'
+2025-07-16 21:17:56 | [31mERROR[0m | AdvancedTelegramBot | initialize:112 | ❌ Failed to initialize bot: 'AdminHandler' object has no attribute 'admin_panel'
+Exception: (<class 'AttributeError'>, AttributeError("'AdminHandler' object has no attribute 'admin_panel'"), <traceback object at 0x0000026BE8409BC0>)
+--------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\MU3\Desktop\advanced_telegram1_bot\main.py", line 104, in initialize
+    self._register_handlers()
+  File "C:\Users\MU3\Desktop\advanced_telegram1_bot\main.py", line 142, in _register_handlers
+    self.application.add_handler(CommandHandler("admin", self.handlers['admin'].admin_panel))
+                                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'AdminHandler' object has no attribute 'admin_panel'
+2025-07-16 21:17:56 | [35mCRITICAL[0m | AdvancedTelegramBot | main:181 | ❌ Bot failed critically: 'AdminHandler' object has no attribute 'admin_panel'
+Exception: (<class 'AttributeError'>, AttributeError("'AdminHandler' object has no attribute 'admin_panel'"), <traceback object at 0x0000026BE840A780>)
+--------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\MU3\Desktop\advanced_telegram1_bot\main.py", line 176, in main
+    await bot.initialize()
+  File "C:\Users\MU3\Desktop\advanced_telegram1_bot\main.py", line 104, in initialize
+    self._register_handlers()
+  File "C:\Users\MU3\Desktop\advanced_telegram1_bot\main.py", line 142, in _register_handlers
+    self.application.add_handler(CommandHandler("admin", self.handlers['admin'].admin_panel))
+                                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'AdminHandler' object has no attribute 'admin_panel'
+2025-07-16 21:18:21 | [31mERROR[0m | AdvancedTelegramBot | initialize:112 | ❌ Failed to initialize bot: 'AdminHandler' object has no attribute 'button_handler'
+Exception: (<class 'AttributeError'>, AttributeError("'AdminHandler' object has no attribute 'button_handler'"), <traceback object at 0x000002731462A800>)
+--------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\MU3\Desktop\advanced_telegram1_bot\main.py", line 104, in initialize
+    self._register_handlers()
+  File "C:\Users\MU3\Desktop\advanced_telegram1_bot\main.py", line 143, in _register_handlers
+    self.application.add_handler(CallbackQueryHandler(self.handlers['admin'].button_handler))
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'AdminHandler' object has no attribute 'button_handler'
+2025-07-16 21:18:21 | [35mCRITICAL[0m | AdvancedTelegramBot | main:181 | ❌ Bot failed critically: 'AdminHandler' object has no attribute 'button_handler'
+Exception: (<class 'AttributeError'>, AttributeError("'AdminHandler' object has no attribute 'button_handler'"), <traceback object at 0x00000273142DD1C0>)
+--------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\MU3\Desktop\advanced_telegram1_bot\main.py", line 176, in main
+    await bot.initialize()
+  File "C:\Users\MU3\Desktop\advanced_telegram1_bot\main.py", line 104, in initialize
+    self._register_handlers()
+  File "C:\Users\MU3\Desktop\advanced_telegram1_bot\main.py", line 143, in _register_handlers
+    self.application.add_handler(CallbackQueryHandler(self.handlers['admin'].button_handler))
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'AdminHandler' object has no attribute 'button_handler'
+2025-07-16 22:13:16 | [35mCRITICAL[0m | AdvancedTelegramBot | main:187 | ❌ Bot failed critically: Cannot close a running event loop
+Exception: (<class 'RuntimeError'>, RuntimeError('Cannot close a running event loop'), <traceback object at 0x00000267006AACC0>)
+--------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\MU3\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_application.py", line 1006, in __run
+    raise exc
+  File "C:\Users\MU3\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_application.py", line 995, in __run
+    loop.run_until_complete(self.initialize())
+  File "C:\Users\MU3\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 630, in run_until_complete
+    self._check_running()
+  File "C:\Users\MU3\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 589, in _check_running
+    raise RuntimeError('This event loop is already running')
+RuntimeError: This event loop is already running
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\MU3\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_application.py", line 1017, in __run
+    loop.run_until_complete(self.shutdown())
+  File "C:\Users\MU3\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 630, in run_until_complete
+    self._check_running()
+  File "C:\Users\MU3\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 589, in _check_running
+    raise RuntimeError('This event loop is already running')
+RuntimeError: This event loop is already running
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\MU3\Desktop\advanced_telegram1_bot\main.py", line 185, in main
+    await bot.start()
+  File "C:\Users\MU3\Desktop\advanced_telegram1_bot\main.py", line 168, in start
+    await self.application.run_polling()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MU3\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_application.py", line 818, in run_polling
+    return self.__run(
+           ^^^^^^^^^^^
+  File "C:\Users\MU3\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_application.py", line 1022, in __run
+    loop.close()
+  File "C:\Users\MU3\AppData\Local\Programs\Python\Python311\Lib\asyncio\proactor_events.py", line 686, in close
+    raise RuntimeError("Cannot close a running event loop")
+RuntimeError: Cannot close a running event loop
+2025-07-16 22:14:05 | [35mCRITICAL[0m | AdvancedTelegramBot | main:187 | ❌ Bot failed critically: There is no current event loop in thread 'MainThread'.
+Exception: (<class 'RuntimeError'>, RuntimeError("There is no current event loop in thread 'MainThread'."), <traceback object at 0x00000123E7205040>)
+--------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\MU3\Desktop\advanced_telegram1_bot\main.py", line 183, in main
+    bot.application.run_polling()
+  File "C:\Users\MU3\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_application.py", line 818, in run_polling
+    return self.__run(
+           ^^^^^^^^^^^
+  File "C:\Users\MU3\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_application.py", line 977, in __run
+    loop = asyncio.get_event_loop()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MU3\AppData\Local\Programs\Python\Python311\Lib\asyncio\events.py", line 681, in get_event_loop
+    raise RuntimeError('There is no current event loop in thread %r.'
+RuntimeError: There is no current event loop in thread 'MainThread'.
+2025-07-16 22:14:40 | [35mCRITICAL[0m | AdvancedTelegramBot | main:187 | ❌ Bot failed critically: Cannot close a running event loop
+Exception: (<class 'RuntimeError'>, RuntimeError('Cannot close a running event loop'), <traceback object at 0x000001EB1A86F080>)
+--------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\MU3\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_application.py", line 1006, in __run
+    raise exc
+  File "C:\Users\MU3\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_application.py", line 995, in __run
+    loop.run_until_complete(self.initialize())
+  File "C:\Users\MU3\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 630, in run_until_complete
+    self._check_running()
+  File "C:\Users\MU3\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 589, in _check_running
+    raise RuntimeError('This event loop is already running')
+RuntimeError: This event loop is already running
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\MU3\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_application.py", line 1017, in __run
+    loop.run_until_complete(self.shutdown())
+  File "C:\Users\MU3\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 630, in run_until_complete
+    self._check_running()
+  File "C:\Users\MU3\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 589, in _check_running
+    raise RuntimeError('This event loop is already running')
+RuntimeError: This event loop is already running
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\MU3\Desktop\advanced_telegram1_bot\main.py", line 183, in main
+    await bot.application.run_polling()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MU3\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_application.py", line 818, in run_polling
+    return self.__run(
+           ^^^^^^^^^^^
+  File "C:\Users\MU3\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_application.py", line 1022, in __run
+    loop.close()
+  File "C:\Users\MU3\AppData\Local\Programs\Python\Python311\Lib\asyncio\proactor_events.py", line 686, in close
+    raise RuntimeError("Cannot close a running event loop")
+RuntimeError: Cannot close a running event loop
+2025-07-16 22:18:18 | [35mCRITICAL[0m | AdvancedTelegramBot | main:175 | ❌ Bot failed critically: Cannot close a running event loop
+Exception: (<class 'RuntimeError'>, RuntimeError('Cannot close a running event loop'), <traceback object at 0x00000273D0E0B100>)
+--------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\MU3\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_application.py", line 1006, in __run
+    raise exc
+  File "C:\Users\MU3\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_application.py", line 995, in __run
+    loop.run_until_complete(self.initialize())
+  File "C:\Users\MU3\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 630, in run_until_complete
+    self._check_running()
+  File "C:\Users\MU3\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 589, in _check_running
+    raise RuntimeError('This event loop is already running')
+RuntimeError: This event loop is already running
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\MU3\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_application.py", line 1017, in __run
+    loop.run_until_complete(self.shutdown())
+  File "C:\Users\MU3\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 630, in run_until_complete
+    self._check_running()
+  File "C:\Users\MU3\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 589, in _check_running
+    raise RuntimeError('This event loop is already running')
+RuntimeError: This event loop is already running
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\MU3\Desktop\advanced_telegram1_bot\main.py", line 173, in main
+    await bot.application.run_polling()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MU3\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_application.py", line 818, in run_polling
+    return self.__run(
+           ^^^^^^^^^^^
+  File "C:\Users\MU3\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_application.py", line 1022, in __run
+    loop.close()
+  File "C:\Users\MU3\AppData\Local\Programs\Python\Python311\Lib\asyncio\proactor_events.py", line 686, in close
+    raise RuntimeError("Cannot close a running event loop")
+RuntimeError: Cannot close a running event loop
+2025-07-17 01:49:43 | [35mCRITICAL[0m | AdvancedTelegramBot | main:175 | ❌ Bot failed critically: Cannot close a running event loop
+Exception: (<class 'RuntimeError'>, RuntimeError('Cannot close a running event loop'), <traceback object at 0x000001B3CA8EAE40>)
+--------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\MU3\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_application.py", line 1006, in __run
+    raise exc
+  File "C:\Users\MU3\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_application.py", line 995, in __run
+    loop.run_until_complete(self.initialize())
+  File "C:\Users\MU3\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 630, in run_until_complete
+    self._check_running()
+  File "C:\Users\MU3\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 589, in _check_running
+    raise RuntimeError('This event loop is already running')
+RuntimeError: This event loop is already running
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\MU3\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_application.py", line 1017, in __run
+    loop.run_until_complete(self.shutdown())
+  File "C:\Users\MU3\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 630, in run_until_complete
+    self._check_running()
+  File "C:\Users\MU3\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 589, in _check_running
+    raise RuntimeError('This event loop is already running')
+RuntimeError: This event loop is already running
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\MU3\Desktop\advanced_telegram1_bot\main.py", line 173, in main
+    await bot.application.run_polling()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MU3\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_application.py", line 818, in run_polling
+    return self.__run(
+           ^^^^^^^^^^^
+  File "C:\Users\MU3\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_application.py", line 1022, in __run
+    loop.close()
+  File "C:\Users\MU3\AppData\Local\Programs\Python\Python311\Lib\asyncio\proactor_events.py", line 686, in close
+    raise RuntimeError("Cannot close a running event loop")
+RuntimeError: Cannot close a running event loop

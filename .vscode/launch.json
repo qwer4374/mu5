@@ -1,0 +1,70 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "🤖 Run Bot",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/main.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}",
+                "LOG_LEVEL": "INFO",
+                "PYTHONIOENCODING": "utf-8"
+            },
+            "cwd": "${workspaceFolder}",
+            "stopOnEntry": false,
+            "args": []
+        },
+        {
+            "name": "🐛 Debug Bot",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/main.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}",
+                "LOG_LEVEL": "DEBUG",
+                "PYTHONIOENCODING": "utf-8"
+            },
+            "cwd": "${workspaceFolder}",
+            "stopOnEntry": false,
+            "args": []
+        },
+        {
+            "name": "🧪 Run Tests",
+            "type": "python",
+            "request": "launch",
+            "module": "pytest",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}",
+                "LOG_LEVEL": "DEBUG"
+            },
+            "cwd": "${workspaceFolder}",
+            "args": [
+                "tests/",
+                "-v",
+                "--tb=short"
+            ]
+        },
+        {
+            "name": "📊 Database Migration",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/scripts/migrate_database.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}",
+                "LOG_LEVEL": "INFO"
+            },
+            "cwd": "${workspaceFolder}",
+            "args": []
+        }
+    ]
+}
+

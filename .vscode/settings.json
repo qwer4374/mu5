@@ -1,0 +1,100 @@
+{
+    "python.defaultInterpreterPath": "python",
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": true,
+    "python.linting.flake8Enabled": false,
+    "python.linting.mypyEnabled": false,
+    "python.formatting.provider": "black",
+    "python.formatting.blackArgs": [
+        "--line-length=88",
+        "--target-version=py38"
+    ],
+    "python.sortImports.args": [
+        "--multi-line=3",
+        "--trailing-comma",
+        "--force-grid-wrap=0",
+        "--combine-as",
+        "--line-width=88"
+    ],
+    "files.encoding": "utf8",
+    "files.eol": "\n",
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": "explicit"
+    },
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
+    "terminal.integrated.profiles.windows": {
+        "PowerShell": {
+            "source": "PowerShell",
+            "icon": "terminal-powershell"
+        },
+        "Command Prompt": {
+            "path": [
+                "${env:windir}\\Sysnative\\cmd.exe",
+                "${env:windir}\\System32\\cmd.exe"
+            ],
+            "args": [],
+            "icon": "terminal-cmd"
+        }
+    },
+    "python.terminal.activateEnvironment": true,
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.typeCheckingMode": "basic",
+    "python.testing.pytestEnabled": true,
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestArgs": [
+        "tests"
+    ],
+    "files.associations": {
+        "*.py": "python",
+        "*.pyi": "python",
+        "requirements*.txt": "pip-requirements"
+    },
+    "files.exclude": {
+        "**/__pycache__": true,
+        "**/*.pyc": true,
+        "**/node_modules": true,
+        "**/.git": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "**/.pytest_cache": true,
+        "**/.coverage": true,
+        "**/htmlcov": true,
+        "data/logs/**": true,
+        "data/downloads/**": true,
+        "data/cache/**": true
+    },
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/bower_components": true,
+        "**/*.code-search": true,
+        "data/logs/**": true,
+        "data/downloads/**": true,
+        "data/cache/**": true
+    },
+    "emmet.includeLanguages": {
+        "python": "html"
+    },
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#2D3748",
+        "activityBar.foreground": "#E2E8F0",
+        "statusBar.background": "#2B6CB0",
+        "statusBar.foreground": "#FFFFFF"
+    },
+    "workbench.iconTheme": "vscode-icons",
+    "editor.minimap.enabled": true,
+    "editor.rulers": [88],
+    "editor.wordWrap": "on",
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": false,
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false,
+    "extensions.ignoreRecommendations": false,
+    "telemetry.telemetryLevel": "off",
+    "cursorpyright.analysis.autoImportCompletions": true,
+    "cursorpyright.analysis.typeCheckingMode": "basic"
+}
+

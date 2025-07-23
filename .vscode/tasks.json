@@ -1,0 +1,192 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "🤖 Run Bot",
+            "type": "shell",
+            "command": "python",
+            "args": ["main.py"],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": false
+            },
+            "problemMatcher": ["$python"],
+            "options": {
+                "cwd": "${workspaceFolder}",
+                "env": {
+                    "PYTHONPATH": "${workspaceFolder}",
+                    "LOG_LEVEL": "INFO",
+                    "PYTHONIOENCODING": "utf-8"
+                }
+            },
+            "runOptions": {
+                "runOn": "default"
+            }
+        },
+        {
+            "label": "📦 Install Dependencies",
+            "type": "shell",
+            "command": "pip",
+            "args": ["install", "-r", "requirements.txt", "--upgrade"],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            },
+            "options": {
+                "cwd": "${workspaceFolder}"
+            }
+        },
+        {
+            "label": "🔄 Update Dependencies",
+            "type": "shell",
+            "command": "pip",
+            "args": ["install", "-r", "requirements.txt", "--upgrade", "--force-reinstall"],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            },
+            "options": {
+                "cwd": "${workspaceFolder}"
+            }
+        },
+        {
+            "label": "🧪 Run Tests",
+            "type": "shell",
+            "command": "python",
+            "args": ["-m", "pytest", "tests/", "-v", "--tb=short"],
+            "group": "test",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            },
+            "options": {
+                "cwd": "${workspaceFolder}",
+                "env": {
+                    "PYTHONPATH": "${workspaceFolder}"
+                }
+            }
+        },
+        {
+            "label": "🧹 Clean Cache",
+            "type": "shell",
+            "command": "powershell",
+            "args": [
+                "-Command",
+                "Remove-Item -Recurse -Force __pycache__, .pytest_cache, *.pyc -ErrorAction SilentlyContinue; Get-ChildItem -Recurse -Filter '*.pyc' | Remove-Item -Force; Write-Host 'Cache cleaned successfully' -ForegroundColor Green"
+            ],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            },
+            "options": {
+                "cwd": "${workspaceFolder}"
+            }
+        },
+        {
+            "label": "📊 Database Migration",
+            "type": "shell",
+            "command": "python",
+            "args": ["scripts/migrate_database.py"],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            },
+            "options": {
+                "cwd": "${workspaceFolder}",
+                "env": {
+                    "PYTHONPATH": "${workspaceFolder}"
+                }
+            }
+        },
+        {
+            "label": "💾 Create Backup",
+            "type": "shell",
+            "command": "python",
+            "args": ["scripts/create_backup.py"],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            },
+            "options": {
+                "cwd": "${workspaceFolder}",
+                "env": {
+                    "PYTHONPATH": "${workspaceFolder}"
+                }
+            }
+        },
+        {
+            "label": "🔍 Code Formatting",
+            "type": "shell",
+            "command": "python",
+            "args": ["-m", "black", ".", "--line-length=88"],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            },
+            "options": {
+                "cwd": "${workspaceFolder}"
+            }
+        },
+        {
+            "label": "📋 Generate Requirements",
+            "type": "shell",
+            "command": "pip",
+            "args": ["freeze", ">", "requirements_generated.txt"],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            },
+            "options": {
+                "cwd": "${workspaceFolder}"
+            }
+        },
+        {
+            "label": "🚀 PowerShell Run",
+            "type": "shell",
+            "command": "powershell",
+            "args": ["-ExecutionPolicy", "Bypass", "-File", "run_bot.ps1"],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            },
+            "options": {
+                "cwd": "${workspaceFolder}"
+            }
+        }
+    ]
+}
+

@@ -226,7 +226,7 @@ def main():
     bot.run()
 
 if __name__ == "__main__":
-    if os.environ.get("CLOUD_RUN"):
+    if "PORT" in os.environ:
         from flask import Flask, request
         import telegram
         TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]

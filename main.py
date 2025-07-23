@@ -229,13 +229,18 @@ def main():
 if __name__ == "__main__":
     if "PORT" in os.environ:
         print(f"=== STARTING FLASK APP ON PORT {os.environ.get('PORT', 8080)} ===")
+        # استيراد المكتبات المطلوبة فقط هنا
         from flask import Flask, request
         import telegram
+        import asyncio
+        from telegram.ext import Application
         print("Starting Flask app...")  # طباعة للتشخيص
         TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
         PORT = int(os.environ.get("PORT", 8080))
         bot = telegram.Bot(token=TOKEN)
         app = Flask(__name__)
+        adv_bot = AdvancedTelegramBot()
+        application = adv_bot.application
 
         @app.route("/healthz")
         def healthz():
@@ -246,12 +251,10 @@ if __name__ == "__main__":
         def webhook():
             print("Webhook received!")  # طباعة للتشخيص
             update = telegram.Update.de_json(request.get_json(force=True), bot)
-            # ضع هنا منطق التعامل مع الرسائل أو مررها إلى dispatcher إذا كنت تستخدم python-telegram-bot
+            asyncio.run(application.process_update(update))
             return "ok"
 
         app.run(host="0.0.0.0", port=PORT)
         print("=== FLASK APP STARTED ===")
     else:
-        # التشغيل المحلي أو polling
-        # ... الكود الأصلي لتشغيل البوت ...
-        pass
+        main()

@@ -222,11 +222,13 @@ class AdvancedTelegramBot:
         self.application.run_polling()
 
 def main():
+    print("=== BOT CONTAINER STARTED ===")
     bot = AdvancedTelegramBot()
     bot.run()
 
 if __name__ == "__main__":
     if "PORT" in os.environ:
+        print(f"=== STARTING FLASK APP ON PORT {os.environ.get('PORT', 8080)} ===")
         from flask import Flask, request
         import telegram
         print("Starting Flask app...")  # طباعة للتشخيص
@@ -248,6 +250,7 @@ if __name__ == "__main__":
             return "ok"
 
         app.run(host="0.0.0.0", port=PORT)
+        print("=== FLASK APP STARTED ===")
     else:
         # التشغيل المحلي أو polling
         # ... الكود الأصلي لتشغيل البوت ...
